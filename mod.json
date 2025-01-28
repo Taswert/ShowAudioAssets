@@ -5,8 +5,11 @@
 		"android": "2.2074"
 	},
 	"id": "taswert.showaudioassets",
-	"name": "ShowAudioAssets",
+	"name": "Show Audio Assets",
 	"version": "v1.0.0",
 	"developer": "Taswert",
-	"description": "This mod shows audio assets in editor, also it allows you to download these assets from the editor"
+	"description": "This mod shows audio assets in editor, also it allows you to download these assets from the editor",
+	"links": {
+		"source": "https://github.com/Taswert/ShowAudioAssets"
+	}
 }

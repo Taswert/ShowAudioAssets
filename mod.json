@@ -6,7 +6,7 @@
 	},
 	"id": "taswert.showaudioassets",
 	"name": "Show Audio Assets",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "Taswert",
 	"description": "This mod shows audio assets in editor, also it allows you to download these assets from the editor",
 	"links": {

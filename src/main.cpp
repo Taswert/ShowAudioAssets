@@ -18,12 +18,13 @@ class $modify(CustomSongLayer) {
 	void show() {
 		this->show();
 		CustomSongWidget* csw = static_cast<CustomSongWidget*>(this->m_mainLayer->getChildByID("CustomSongWidget"));
-		auto lel = GameManager::sharedState()->getEditorLayer();
-		bool foundSongs = false;
-		gd::string songIds = lel->getSongIDs(foundSongs);
-		gd::string sfxIds = lel->getSFXIDs();
-		if (lel && (foundSongs || !sfxIds.empty())) {
-			csw->updateWithMultiAssets(songIds, sfxIds, 0);
+		if (auto lel = GameManager::sharedState()->getEditorLayer()) {
+			bool foundSongs = false;
+			gd::string songIds = lel->getSongIDs(foundSongs);
+			gd::string sfxIds = lel->getSFXIDs();
+			if (foundSongs || !sfxIds.empty()) {
+				csw->updateWithMultiAssets(songIds, sfxIds, 0);
+			}
 		}
 	}
 };
